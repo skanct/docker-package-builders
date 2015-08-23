@@ -8,6 +8,7 @@ RUN rpm --import /tmp/*.pub
 RUN yum clean metadata
 RUN yum update
 RUN yum install tar
+RUN yum install rpm-build
 RUN yum install yum-utils
 RUN yum install apache-maven
 RUN yum install golang
