@@ -10,4 +10,3 @@ RUN yum update
 RUN yum install apache-maven
 RUN yum install golang
 RUN yum install koji
-RUN sed -i.original -e 's/^/#/' /etc/yum.repos.d/epel*.repo
